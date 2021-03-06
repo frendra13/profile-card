@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'kumbh_sansregular';
+    src: url('kumbhsans-regular-webfont.woff') format('woff');
+}
+
+body {
+    background-color: #19a1ad;
+    overflow: hidden;
+    font-family: kumbh_sansregular, sans-serif;
+}
+
+
+/*? background */
+
+.bg-cont {}
+
+.bg-pattern-top {
+    background: url(../images/bg-pattern-top.png);
+    height: 200vh;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    transform: scale(0.55);
+    top: -100%;
+    left: -30%;
+}
+
+.bg-pattern-bot {
+    background: url(../images/bg-pattern-bottom.png);
+    height: 200vh;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    transform: scale(0.55);
+    bottom: -100%;
+    right: -30%;
+
+}
+
+/** end background */
+
+/* ? Card */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    width: 50vh;
+    height: 50vh;
+    background-color: white;
+    position: absolute;
+    top: 25vh;
+    border-radius: 2vh;
+    overflow: hidden;
+    box-shadow: 0 0 10vh rgba(0, 0, 0, .3);
+}
+
+.card-bg {
+    width: 100%;
+    height: 17vh;
+    background: url(../images/bg-pattern-card.png);
+    background-size: cover;
+    position: aboslute;
+    top: 0;
+}
+
+
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.profpic {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 10vh;
+    border: 1vh solid white;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url(../images/image-victor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-cont .name {
+    position: absolute;
+    display: inline-block;
+    transform: translateY(15vh);
+    font-size: 2.5vh;
+    font-weight: 600;
+    top: 11vh;
+}
+
+.name span {
+    font-weight: lighter;
+}
+
+.card-cont .loc {
+    position: absolute;
+    display: inline-block;
+    transform: translateY(19vh);
+    font-size: 2.5vh;
+    font-weight: 400;
+    top: 11vh;
+}
+
+
+
+.hr {
+    position: absolute;
+    min-width: 100%;
+    border-top: .2vh solid rgb(150, 150, 150);
+    bottom: 10vh;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.contact .linkedin {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    transform: scale(0.1, 0.1);
+    right: 15vh;
+    bottom: -20vh;
+
+}
+
+.contact .email {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.1, 0.1);
+    bottom: -20vh;
+}
+
+.contact .github {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.1, 0.1);
+    left: 15vh;
+
+    bottom: -20vh;
+}
+
+
+/*? Footer  */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+.attribution {
+    font-size: 1vh;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/** end footer */
